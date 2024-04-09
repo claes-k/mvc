@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8e8e8;
+    font-family: "Martian Mono", monospace;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+a,
+a:visited {
+    color: rgb(35, 150, 90);
+}
+
+a:hover {
+    background-color: rgb(35, 150, 90);
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff;
+}
+
+.header {
+    padding: 1rem 2rem;
+}
+
+.bg-color {
+    background-color: rgb(35, 150, 90);
+    color: #fff;
+}
+
+.nav {
+    padding: 1rem 2rem;
+}
+
+.nav a,
+.nav a:visited {
+    color: #fff;
+}
+
+.nav a:hover {
+    color: rgb(255, 205, 30);
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.content {
+    padding: 1rem 2rem;
+}
+
+.footer {
+    padding: 1rem 2rem;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex-basis: 25%;
+}
+
+.fancy-font {
+    font-family: 'Grenze Gotisch', serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.link-header {
+    font-size: 1.5em;
+    font-weight: bold;
+}

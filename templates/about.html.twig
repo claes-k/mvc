@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    <div class="two-columns">
+        <div class="left-column">
+            <h2>Om kursen</h2>
+            <img src="{{ asset('img/symphony_orchestra.jpg') }}" alt="">
+            <p>MVC står för Model-View-Controller, eller modell, vy, kontroller på svenska, och är ett arkitektuellt designmönster. I denna kursen ska vi lära oss programmera objektorienterade webbapplikationer. Några av de språk vi ska använda är PHP, SQL, HTML, CSS och vi använder oss av ramverket Symfony (därav bilden).</p>
+            </div>
+        <div class="right-column">
+            <h2>Länkar</h2>
+            <ul>
+                <li><a href="https://github.com/dbwebb-se/mvc">Kursens repo</a></li>
+                <li><a href="https://github.com/claes-k/mvc">Mitt repo</a></li>
+            <ul>
+        </div>
+    </div>
+{% endblock %}

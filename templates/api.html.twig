@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+
+{% block title %}API{% endblock %}
+
+{% block body %}
+    <h2>API-länkar</h2>
+
+    <div class="link-header"><a href="{{ path('quote') }}">API/QUOTE</a></div>
+    <p>Returnerar ett citat, citatets författare samt dagens datum och en tidsstämpel när förfrågningen gjordes.</p>
+{% endblock %}
