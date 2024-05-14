@@ -21,11 +21,8 @@ class CardGameController extends AbstractController
     {
         $deck = new CardDeck();
 
-        // $single_card = $deck->getDeck()[0];
-
         $data = [
             "cards" => $deck->getString(),
-            // "singleCard" => $single_card->getAsString(),
         ];
 
         return $this->render('card/deck.html.twig', $data);
@@ -45,7 +42,6 @@ class CardGameController extends AbstractController
 
         $data = [
             "cards" => $deck->getString(),
-            // "number" => $deck->getNumberCards(),
         ];
 
         return $this->render('card/deck.html.twig', $data);
@@ -100,7 +96,6 @@ class CardGameController extends AbstractController
         // echo "<br>";
 
         if ($num > $number) {
-            // echo "Error<br>";
             $this->addFlash(
                 'warning',
                 'Not enough cards in the deck!'
