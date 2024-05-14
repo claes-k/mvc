@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block title %}API{% endblock %}
+
+{% block body %}
+    <h2>Session</h2>
+
+    {{ include('flash.html.twig') }}
+
+    {# {% for value in session %}
+    <span>{{ value }}</span>
+    {% endfor %} #}
+
+    {# <div>{{ category }}</div>
+    <div>{{ name }}</div> #}
+
+    {% if deck is defined %}
+    <h3>Deck:</h3>
+    {% for row in deck %}
+        <p>{{ row }}</p>
+    {% endfor %}
+    {% endif %}
+
+    {% if hand is defined %}
+    <h3>Hand:</h3>
+    {% for row in hand %}
+        <p>{{ row }}</p>
+    {% endfor %}
+    {% endif %}
+{% endblock %}

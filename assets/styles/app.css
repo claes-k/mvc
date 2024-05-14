@@ -70,19 +70,19 @@ ul {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 h1,
@@ -124,11 +124,61 @@ img {
 
 .fancy-font {
     font-family: 'Grenze Gotisch', serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 1.2;
 }
 
 .link-header {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.inline-list,
+.bigger {
+    margin-bottom: 0.7rem;
+    font-size: 4rem;
+    line-height: 1rem;
+}
+
+.inline-list li {
+    display: inline;
+}
+
+.big {
+    font-size: 2rem;
+}
+
+.flash-notice,
+.flash-warning {
+    margin-bottom: 0.7rem;
+}
+
+.flash-notice {
+    padding: 0.5em;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.flash-notice:before {
+    content: "ⓘ";
+}
+
+.flash-warning {
+    padding: 0.5em;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.flash-warning:before {
+    content: "⚠";
+}
+
+.card-graphic {
+    width: 100px;
+}
+
+.image-resize {
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }

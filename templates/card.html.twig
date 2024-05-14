@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card{% endblock %}
+
+{% block body %}
+    <div class="two-columns">
+        <div class="left-column">
+            <h2>Card</h2>
+            <p>Min första klass är <b>Card</b>, som är basen för ett spelkort. Jag valde att ge den "suit" (färg/svit) och "value" (värde) som separata attribut för maximal användbarhet. <b>CardGraphic</b> utökar Card-klassen och lägger till "graphic" som attribut för att kunna representera kortet grafiskt. Så som jag implementerat det hittils så innehåller graphic ett filnamn som jag sedan kan länka till för att visa upp kortet visuellt.</p>
+
+            <p><b>CardDeck</b>-klassen konstruerar en 52-korts kortlek genom att loopa igenom "suits", "values" och "graphics". Den innehåller också metoder för att blanda kortleken, dra kort och räkna hur många kort som finns i kortleken.</p>
+
+            <p><b>CardHand</b>-klassen skapar en tom hand som man sedan kan lägga kort till via addCard-metoden.</p>
+            <img src="{{ asset('img/card-uml.png') }}" alt="" class="image-resize">
+            </div>
+        <div class="right-column">
+            <h2>Länkar</h2>
+            <ul>
+                <li><a href="{{ path('card_deck') }}">Deck</a></li>
+                <li><a href="{{ path('card_deck_shuffle') }}">Shuffle</a></li>
+                <li><a href="{{ path('card_deck_draw') }}">Draw 1</a></li>
+                <li><a href="{{ path('card_deck_draw') }}/5">Draw 5</a></li>
+            <ul>
+        </div>
+    </div>
+{% endblock %}

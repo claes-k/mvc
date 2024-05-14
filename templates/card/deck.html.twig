@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card Deck{% endblock %}
+
+{% block body %}
+
+{{ include('flash.html.twig') }}
+
+{% if singleCard is defined %}
+    <p>{{ singleCard }}</p>
+{% endif %}
+
+{% if number is defined %}
+    <p>{{ number }}</p>
+{% endif %}
+
+{% for cardUrl in cards %}
+    <img src="{{ asset('img/svg/') }}{{ cardUrl }}" class="card-graphic">
+{% endfor %}
+
+{% endblock %}

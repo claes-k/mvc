@@ -5,6 +5,18 @@
 {% block body %}
     <h2>API-länkar</h2>
 
-    <div class="link-header"><a href="{{ path('quote') }}">API/QUOTE</a></div>
+    <div class="link-header"><a href="{{ path('api_quote') }}">API/QUOTE</a></div>
     <p>Returnerar ett citat, citatets författare samt dagens datum och en tidsstämpel när förfrågningen gjordes.</p>
+
+    <div class="link-header"><a href="{{ path('api_deck') }}">API/DECK</a></div>
+    <p>Returnerar en 52-korts kortlek sorterad på färg/svit och värde.</p>
+
+    <div class="link-header"><a href="{{ path('api_deck_shuffle') }}">API/DECK/SHUFFLE</a></div>
+    <p>Returnerar en blandad 52-korts kortlek.</p>
+
+    <div class="link-header"><a href="{{ path('api_deck_draw') }}">API/DECK/DRAW</a></div>
+    <p>Returnerar ett kort från en 52-korts kortlek samt antalet kort kvar i kortleken.</p>
+
+    <div class="link-header"><a href="{{ path('api_deck_draw_num', {'num': 5}) }}">API/DECK/DRAW/:NUMBER</a></div>
+    <p>Returnerar fem kort från en 52-korts kortlek samt antalet kort kvar i kortleken.</p>
 {% endblock %}
