@@ -72,12 +72,6 @@ class ControllerTwig extends AbstractController
         return $this->render('api.html.twig');
     }
 
-    // #[Route("/api/quote", name: "quote")]
-    // public function quote(): Response
-    // {
-    //     return $this->render('quote.html.twig');
-    // }
-
     #[Route("/card", name: "card")]
     public function card(): Response
     {

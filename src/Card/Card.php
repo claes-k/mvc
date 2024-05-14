@@ -15,7 +15,6 @@ class Card
 
     public function getAsString(): string
     {
-        // return "[{$this->suit}{$this->value}]";
         return "{$this->value} of {$this->suit}";
     }
 
