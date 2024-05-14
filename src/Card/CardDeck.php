@@ -116,14 +116,4 @@ class CardDeck
         unset($this->deck[0]);
         return $card;
     }
-
-    // public function getCards(): array
-    // {
-    //     return $this->deck;
-    // }
-
-    // public function setCards($cardsArray): array
-    // {
-    //     return $this->deck[] = $cardsArray;
-    // }
 }
